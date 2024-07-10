@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("1_1v5le")
 health_change = -10
-energy_change = 15
+energy_change = 16
 itme_key = 3
 display_name = "Mushroom"
 icon = ExtResource("1_adqgp")

@@ -1,6 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720648724
+::res://::1720649272
 icon.svg::CompressedTexture2D::5709920523303339395::1714470775::1714470783::1::::<><>::
+README.md::TextFile::-1::1720649241::0::1::::<><>::
 ::res://Assets/::1714471205
 stick.tscn::PackedScene::3550821423577994209::1714471205::0::1::::<><>::
 ::res://Assets/audio/::1714470986
@@ -124,10 +125,10 @@ equippable_template.gd::GDScript::-1::1719265755::0::1::::EquippableItem<>Node3D
 equippable_template.tscn::PackedScene::764575670368549523::1720648295::0::1::::<><>::res://Items/Equippables/equippable_template.gd
 equippable_weapon.gd::GDScript::-1::1719616024::0::1::::EquippableWeapon<>EquippableItem<>::
 equippable_weapon_template.tscn::PackedScene::7137404284535254858::1720648294::0::1::::<><>::uid://k5mpjyqyeg72::::res://Items/Equippables/equippable_template.tscn<>res://Items/Equippables/equippable_weapon.gd
-::res://Items/Iteractables/::1720648295
+::res://Items/Iteractables/::1720648792
 interactable.gd::GDScript::-1::1716971927::0::1::::Interactable<>Area3D<>::
 pickuppable.gd::GDScript::-1::1717192712::0::1::::Pickuppable<>Interactable<>::
-pickuppable_mushroom.tscn::PackedScene::7305529067018252299::1720553493::0::1::::<><>::uid://b3uvc1ga8n51q::::res://Items/Iteractables/pickuppable_template.tscn<>uid://ckfu8evm4uoro::::res://Assets/meshes/mushroom.tscn
+pickuppable_mushroom.tscn::PackedScene::7305529067018252299::1720648792::0::1::::<><>::uid://b3uvc1ga8n51q::::res://Items/Iteractables/pickuppable_template.tscn<>uid://ckfu8evm4uoro::::res://Assets/meshes/mushroom.tscn
 pickuppable_plant.tscn::PackedScene::3410820426732641272::1720648295::0::1::::<><>::uid://b3uvc1ga8n51q::::res://Items/Iteractables/pickuppable_template.tscn<>uid://bghsfixxagic4::::res://Assets/meshes/plant.tscn
 pickuppable_stick.tscn::PackedScene::1857666433523933280::1720648295::0::1::::<><>::uid://b3uvc1ga8n51q::::res://Items/Iteractables/pickuppable_template.tscn<>uid://bqubrlvt8xicv::::res://Assets/stick.tscn
 pickuppable_stone.tscn::PackedScene::5305460922426579895::1720648295::0::1::::<><>::uid://b3uvc1ga8n51q::::res://Items/Iteractables/pickuppable_template.tscn<>uid://ee1ky1vxeogd::::res://Assets/meshes/stone.tscn
