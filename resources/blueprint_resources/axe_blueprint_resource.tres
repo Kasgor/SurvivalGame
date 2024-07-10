@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="BlueprintResource" load_steps=6 format=3 uid="uid://dve584d77j272"]
+
+[ext_resource type="Script" path="res://resources/blueprint_resources/blueprint_cost_data.gd" id="1_l8ljt"]
+[ext_resource type="Script" path="res://resources/blueprint_resources/blueprint_resource.gd" id="1_rchbg"]
+
+[sub_resource type="Resource" id="Resource_5ifmj"]
+script = ExtResource("1_l8ljt")
+item = 0
+amount = 1
+
+[sub_resource type="Resource" id="Resource_4ccjx"]
+script = ExtResource("1_l8ljt")
+item = 1
+amount = 1
+
+[sub_resource type="Resource" id="Resource_b334r"]
+script = ExtResource("1_l8ljt")
+item = 14
+amount = 1
+
+[resource]
+script = ExtResource("1_rchbg")
+item_key = 10
+costs = Array[ExtResource("1_l8ljt")]([SubResource("Resource_5ifmj"), SubResource("Resource_4ccjx"), SubResource("Resource_b334r")])

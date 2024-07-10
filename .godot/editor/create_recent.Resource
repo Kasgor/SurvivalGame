@@ -1,0 +1,4 @@
+ConsumableItemResource
+WeaponItemResource
+BlueprintResource
+ItemResource

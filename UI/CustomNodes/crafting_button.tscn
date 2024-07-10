@@ -1,0 +1,76 @@
+[gd_scene load_steps=8 format=3 uid="uid://bhlse7knjxdk7"]
+
+[ext_resource type="Texture2D" uid="uid://u2u74onutcce" path="res://Assets/textures/panel_blue.png" id="1_a4gv3"]
+[ext_resource type="Script" path="res://UI/CustomNodes/crafting_button.gd" id="2_1n3vn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_44akv"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3yokm"]
+bg_color = Color(0, 0, 0, 0.0588235)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pbt3a"]
+bg_color = Color(0, 0, 0, 0.137255)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gn6x0"]
+bg_color = Color(0.378305, 0.269079, 0.24773, 0.388235)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t582d"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="CraftingButton" type="TextureRect"]
+custom_minimum_size = Vector2(160, 160)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_a4gv3")
+script = ExtResource("2_1n3vn")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="IconTextureRect" type="TextureRect" parent="MarginContainer"]
+layout_mode = 2
+expand_mode = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_44akv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3yokm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pbt3a")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_gn6x0")
+theme_override_styles/focus = SubResource("StyleBoxFlat_t582d")

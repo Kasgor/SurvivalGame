@@ -1,0 +1,31 @@
+extends Node
+
+
+signal BUL_create_bulettin
+signal BUL_delete_bulettin
+
+
+signal INV_try_to_pickup_item
+signal INV_ask_update_inventory
+signal INV_inventory_updated
+signal INV_hotbar_updated
+signal INV_switch_to_item_indexes
+signal INV_add_item
+signal INV_delete_crafting_blueprint_costs
+signal INV_delete_item_by_index
+
+signal PLA_freze_player
+signal PLA_unfreze_player
+signal PLA_change_energy
+signal PLA_energy_updated
+signal PLA_change_health
+signal PLA_health_updated
+
+signal EQU_hotkey_pressed
+signal EQU_equip_item
+signal EQU_unequip_item
+signal EQU_active_hotbar_slot_updated
+signal EQU_delete_equipped_item
+
+
+signal SPW_spaw_scene

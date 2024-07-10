@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ConsumableItemResource" load_steps=3 format=3 uid="uid://og8jvyy5ihxp"]
+
+[ext_resource type="Script" path="res://resources/item resources/consumable_item_resource.gd" id="1_1v5le"]
+[ext_resource type="Texture2D" uid="uid://c5oca1enhk2ba" path="res://Assets/textures/item_icons/mushroom.png" id="1_adqgp"]
+
+[resource]
+script = ExtResource("1_1v5le")
+health_change = -10
+energy_change = 15
+itme_key = 3
+display_name = "Mushroom"
+icon = ExtResource("1_adqgp")
+is_equippable = true
+description = "description"

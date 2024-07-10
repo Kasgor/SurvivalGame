@@ -1,0 +1,69 @@
+[gd_scene load_steps=9 format=3 uid="uid://c0dpsqjvmk1o1"]
+
+[ext_resource type="Script" path="res://Game/actors/player.gd" id="1_sw2xd"]
+[ext_resource type="Script" path="res://Game/actors/MainCamera.gd" id="2_if2cm"]
+[ext_resource type="Script" path="res://Game/actors/InteractionRayCast3D.gd" id="2_jn7hg"]
+[ext_resource type="Script" path="res://Game/managers/inventory_manager.gd" id="3_3jdf8"]
+[ext_resource type="Script" path="res://Game/actors/ItemHolder.gd" id="3_4uej1"]
+[ext_resource type="Script" path="res://Game/managers/equip_manager.gd" id="4_n345g"]
+[ext_resource type="Script" path="res://Game/managers/PlayerStatsManager.gd" id="7_4nc28"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1kvtc"]
+radius = 0.25
+height = 1.8
+
+[node name="player" type="CharacterBody3D"]
+collision_layer = 2
+collision_mask = 83
+script = ExtResource("1_sw2xd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_1kvtc")
+
+[node name="head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.677998, 0)
+
+[node name="MainCamera" type="Camera3D" parent="head"]
+cull_mask = 1048573
+script = ExtResource("2_if2cm")
+
+[node name="InteractionRayCast3D" type="RayCast3D" parent="head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.022002, 0)
+target_position = Vector3(0, 0, -2)
+collision_mask = 4
+collide_with_areas = true
+script = ExtResource("2_jn7hg")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="head"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="head/SubViewportContainer"]
+transparent_bg = true
+handle_input_locally = false
+gui_disable_input = true
+size = Vector2i(1920, 1080)
+render_target_update_mode = 4
+
+[node name="EquippableCamera3D" type="Camera3D" parent="head/SubViewportContainer/SubViewport"]
+unique_name_in_owner = true
+cull_mask = 1048574
+
+[node name="ItemHolder" type="Node3D" parent="head/SubViewportContainer/SubViewport/EquippableCamera3D"]
+unique_name_in_owner = true
+script = ExtResource("3_4uej1")
+
+[node name="Managers" type="Node" parent="."]
+
+[node name="InventoryManager" type="Node" parent="Managers"]
+script = ExtResource("3_3jdf8")
+
+[node name="EquipManager" type="Node" parent="Managers"]
+script = ExtResource("4_n345g")
+
+[node name="PlayerStatsManager" type="Node" parent="Managers"]
+script = ExtResource("7_4nc28")

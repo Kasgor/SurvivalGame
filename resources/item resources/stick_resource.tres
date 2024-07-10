@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=3 format=3 uid="uid://cdihohu714c3g"]
+
+[ext_resource type="Script" path="res://resources/item resources/item_resource.gd" id="1_7sr2i"]
+[ext_resource type="Texture2D" uid="uid://b6dyhcpk46qg4" path="res://Assets/textures/item_icons/stick.png" id="1_yixdd"]
+
+[resource]
+script = ExtResource("1_7sr2i")
+itme_key = 0
+display_name = "Stick"
+icon = ExtResource("1_yixdd")
+description = "Horny stick"

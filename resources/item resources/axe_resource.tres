@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="WeaponItemResource" load_steps=3 format=3 uid="uid://c4rggqfhyfnkx"]
+
+[ext_resource type="Script" path="res://resources/item resources/weapon_item_resource.gd" id="1_b3bxt"]
+[ext_resource type="Texture2D" uid="uid://083holgt0cle" path="res://Assets/textures/item_icons/axe.png" id="1_tbxmw"]
+
+[resource]
+script = ExtResource("1_b3bxt")
+damage = 20.0
+range = 1.5
+itme_key = 10
+display_name = "Axe"
+icon = ExtResource("1_tbxmw")
+is_equippable = true
+description = "AXEXAADSd"
